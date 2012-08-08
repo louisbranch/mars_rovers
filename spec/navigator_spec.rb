@@ -12,11 +12,11 @@ describe Navigator do
   context "landing coordinates" do
 
     it "is inside the Plateau limits" do
-      expect { Navigator.new(@plateau,6,1,'N') }.should raise_error("Invalid landing coordinates")
+      expect { Navigator.new(@plateau,6,1,'N') }.to raise_error("Invalid landing coordinates")
     end
 
     it "raises an error when it is outside the Plateau limits" do
-      expect { Navigator.new(@plateau,6,1,'N') }.should raise_error("Invalid landing coordinates")
+      expect { Navigator.new(@plateau,6,1,'N') }.to raise_error("Invalid landing coordinates")
     end
 
   end
@@ -95,7 +95,7 @@ describe Navigator do
 
   it "raises an error when it moves to outside Plateau limits" do
     navigator = Navigator.new(@plateau,5,5,'N')
-    expect { navigator.move('M') }.should raise_error("Invalid instruction, coordinate doesn't exist")
+    expect { navigator.move('M') }.to raise_error("Invalid instruction, coordinate doesn't exist")
   end
 
 end

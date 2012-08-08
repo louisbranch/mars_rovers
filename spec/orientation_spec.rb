@@ -11,7 +11,7 @@ describe Orientation do
     end
 
     it "raises an error when it is not a valid Cardinal Point" do
-      expect { Orientation.new('A') }.should raise_error("Invalid direction")
+      expect { Orientation.new('A') }.to raise_error("Invalid direction")
     end
 
   end
