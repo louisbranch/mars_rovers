@@ -1,3 +1,6 @@
+## What is it?
+Old problem-solve code where I was starting to play around with Ruby
+
 ## To run the program
     ruby mars_rovers.rb
 
