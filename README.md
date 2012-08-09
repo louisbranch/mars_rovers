@@ -1,5 +1,5 @@
 # What is it?
-Old problem-solve code where I was starting to play around with Ruby
+Old problem-solve code when I was starting to play more with Ruby
 
 ## Running the program
     ruby mars_rovers.rb
